@@ -1,0 +1,173 @@
+.cart-page-cart-container {
+  padding: 20px;
+  background: #ffff;
+  border-radius: 7px;
+}
+
+.cart-page-course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-page-course-thumbnail {
+  width: 100px;
+  height: 75px;
+  object-fit: cover;
+}
+
+.cart-page-course-details {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.cart-page-course-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart-page-course-instructor {
+  font-size: 14px;
+  color: #666;
+}
+
+.cart-page-course-rating {
+  font-size: 14px;
+}
+
+.cart-page-stars {
+  color: #ff0;
+  margin: 0 5px;
+}
+
+.cart-page-course-price {
+  display: flex;
+  align-items: center;
+}
+
+.cart-page-current-price {
+  font-size: 20px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.cart-page-original-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.cart-page-remove-icon-container {
+  cursor: pointer;
+}
+
+.cart-page-remove-icon {
+  color: #e91e63;
+}
+
+.cart-page-empty-cart {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cart-page-empty-cart h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.cart-page-empty-cart p {
+  font-size: 16px;
+  color: #666;
+}
+
+.cart-page-checkout-container {
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.cart-page-total {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cart-page-original-price {
+  font-size: 18px;
+  color: #999;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+}
+
+.cart-page-discount {
+  color: #e91e63;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-page-promotions {
+  margin-top: 20px;
+}
+
+.cart-page-coupon-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-page-coupon-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.cart-page-custom-col-left {
+  flex: 1;
+}
+
+.cart-page-custom-col-right {
+  flex: 0.5;
+}
+
+.cart-page-less-then-three {
+  margin: 2%;
+}
+
+.cart-page-container {
+  padding: 20px;
+}
+
+.cart-page-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cart-page-col-xs-12,
+.cart-page-col-sm-12,
+.cart-page-col-md-12,
+.cart-page-col-lg-4 {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .cart-page-col-sm-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart-page-col-md-12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .cart-page-col-lg-4 {
+    width: 33.33%;
+  }
+}
+
+.cart-page-coupon-input {
+  width: 100%;
+}

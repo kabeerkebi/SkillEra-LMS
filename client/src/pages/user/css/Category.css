@@ -1,0 +1,130 @@
+.inter2 {
+  width: 100%;
+}
+
+.paragraph {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.Popular-Categories {
+  text-align: center;
+  font-weight: 500;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+}
+
+.icon {
+  font-size: 24px; /* Set a consistent icon size */
+  margin: 10px;
+}
+
+.card-title {
+  font-family: Georgia, serif;
+  flex-grow: 1; /* Allow the title to grow and fill available space */
+  text-align: center; /* Center the text */
+}
+
+.card {
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 10px; /* Add padding for better spacing */
+  max-width: 300px; /* Limit the width of the card */
+  margin: 10px; /* Add margin around the card */
+  display: flex; /* Ensure flexbox layout for the card */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.card:hover {
+  background-color: #f6f3f3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.atag {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for the button */
+.cta-button:hover {
+  background-color: #357ab7; /* Darken the background on hover */
+}
+
+/* Hover effect for the button-icon when the cta-button is hovered */
+.cta-button:hover .button-icon {
+  transform: translateX(5px); /* Move the icon slightly to the right */
+  color: #ffffff; /* Change the icon color */
+  transition: transform 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.button-icon {
+  margin-left: 10px;
+  font-size: 1.5rem; /* Adjust icon size for better alignment */
+}
+
+/* Responsive adjustments for screens between 767px and 1033px */
+@media (min-width: 768px) and (max-width: 1033px) {
+  .card-body {
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center;
+  }
+
+  .icon {
+    font-size: 20px; /* Adjust icon size for medium screens */
+  }
+
+  .card-title {
+    margin-top: 10px; /* Add margin between icon and text */
+    text-align: center; /* Center the text */
+  }
+
+  .card {
+    max-width: 250px; /* Adjust card width for medium screens */
+  }
+}
+
+/* Responsive adjustments for smaller screens (767px and below) */
+@media (max-width: 767px) {
+  .card-body {
+    flex-direction: row; /* Arrange icon, text, and ArrowForwardIcon in a row */
+    align-items: center; /* Center align items vertically */
+    justify-content: space-between; /* Space items between the edges */
+  }
+
+  .icon {
+    font-size: 24px; /* Set a consistent icon size for smaller screens */
+    margin-right: 10px; /* Add margin to space icon from text */
+  }
+
+  .card-title {
+    flex-grow: 1; /* Allow title to fill available space */
+    text-align: center; /* Center the text */
+  }
+
+  .card {
+    max-width: none; /* Remove card width limit */
+  }
+}

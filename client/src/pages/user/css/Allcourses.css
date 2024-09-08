@@ -1,0 +1,11 @@
+.left-section-allcourses {
+  width: 24%;
+}
+.right-section-allcourses {
+  width: 100%;
+}
+.allcourses-main-div {
+  display: flex;
+  max-height: 100%;
+  min-height: 90vh;
+}

@@ -1,0 +1,35 @@
+.main-allcoursesLeft-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  
+}
+
+.allcoursesLeft-border-div {
+  background: rgb(255, 255, 255);
+  border: 1px  ridge  #fbd7f6;
+  border-radius: 5px;
+  width: 100%;
+  min-width: 220px;
+  max-width: 320px;
+  margin: 8px;
+  box-shadow: 0 0 10px rgba(69, 2, 54, 0.1);
+}
+.allcoursesLeft-levels{
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.allcoursesLeft-ratings {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.stars {
+  color: #f5c518; /* Gold color for stars */
+  margin-right: 5px;
+}
+

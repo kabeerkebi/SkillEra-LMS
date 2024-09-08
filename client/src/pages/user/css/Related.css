@@ -1,0 +1,41 @@
+/* styles.css */
+.custom-card {
+  max-width: 400px;
+  height: auto;
+}
+
+@media screen and (min-width: 1106px) {
+  .custom-card {
+    max-width: 320px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 714px) and (max-width: 930px) {
+  .custom-card {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+.slick-prev {
+  left: 4% !important;
+  z-index: 1;
+}
+
+.slick-next {
+  right: 4% !important;
+  z-index: 1;
+  height: 40px;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 30px;
+
+  /* -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+}
+.related-course {
+  margin-left: 4%;
+}

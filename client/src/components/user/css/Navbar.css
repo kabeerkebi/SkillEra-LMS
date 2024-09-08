@@ -1,0 +1,50 @@
+.Searching_Main_div {
+  min-width: 380px;
+  position: absolute;
+  top: 129%;
+  left: 10px;
+  right: 10px;
+  background-color: white;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 10;
+  border: 1px solid #ddd;
+  max-height: 400px;
+  overflow: auto;
+}
+
+@media (max-width: 600px) {
+  .Searching_Main_div {
+    left: 0px;
+    right: 0px;
+    top: 120%;
+    margin: 0 10px;
+  }
+}
+
+.search-result-item {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover {
+  background-color: #e9f5ff;
+  color: #007bff;
+}
+
+.search-result-item:active {
+  background-color: #d4ebff;
+}
+/* Add this new rule for the active item */
+.search-result-item.active {
+  background-color: #e9f5ff;
+  color: #007bff;
+}

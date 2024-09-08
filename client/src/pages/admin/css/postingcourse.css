@@ -1,0 +1,79 @@
+.post-courses-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+
+  .courses-post-hr {
+    margin-top: -10px;
+    margin-left: 18px;
+  }
+
+  .courses-post-number {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Make other circles grey */
+    color: #555; /* Font color */
+  }
+  
+  .courses-post-checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: rgb(25, 219, 25); /* Make first circle dark */
+    font-weight: bold;;
+  }
+
+  .rounded-circles-post-courses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #343a40; /* Make first circle dark */
+    font-weight: bold;
+  }
+
+  .courses-details {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    color: #555; /* Font color */
+  }
+
+
+  
+.courses-details {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  color: #555; /* Font color */
+}
+
+.containers {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.back-button-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+@media (max-width: 768px) {
+  .back-button-container {
+    top: 10px;
+    left: 10px;
+  }
+}

@@ -1,0 +1,64 @@
+.the-allcourses-heading {
+  margin-left: 10%;
+  margin-top: 4%;
+}
+.allcourses-Right-main {
+  max-height: 100%;
+  min-height: 84%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(118, 0, 92, 0.1);
+  border-top: 1px solid #ffcff8;
+  border-left: 1px solid #ffcff8;
+  border-right: 1px solid #ffcff8;
+}
+
+.allcourses-left-icons {
+  display: flex;
+  justify-content: end;
+}
+
+.maped-allcourses-div {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.icon-container {
+  padding: 10px;
+}
+.the-filter-icon {
+  width: 90px; /* Increase the width for better spacing */
+  height: 40px;
+  text-align: center;
+  border: 1px solid #000; /* Adjust border color */
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Light background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Change cursor to pointer for better UX */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.the-filter-icon:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.the-filter-icon svg {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.the-filter-icon span {
+  font-weight: 500; /* Slightly bolder text */
+  color: #333; /* Dark text color */
+}
+
+.allcourses-heading{
+  font-family: Georgia, serif;
+  font-weight: 900;
+  font-size: 35px;
+}

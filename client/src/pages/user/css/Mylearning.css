@@ -1,0 +1,55 @@
+.the-card-container {
+  background-color: white;
+  padding: 2%;
+  margin: 0 6%;
+  border-radius: 20px;
+  min-height: 68vh;
+}
+
+.my-learning {
+  font-family: Georgia, serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.no-data-found {
+  text-align: center;
+  color: grey;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.learning-image-container {
+  position: relative;
+}
+
+.card-image {
+  transition: filter 0.3s;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem; /* Increased icon size */
+  opacity: 0;
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.learning-card:hover .play-icon {
+  opacity: 1;
+}
+
+.learning-card:hover .card-image {
+  filter: brightness(50%); /* Darken the image */
+}
+
+.mylearning-main {
+  min-height: 90vh;
+}
+/* .empty-carts{
+  height: 70v;
+} */

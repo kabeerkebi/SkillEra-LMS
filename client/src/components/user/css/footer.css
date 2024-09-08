@@ -1,0 +1,196 @@
+/* Footer container */
+.skillera-footer {
+  margin-top: 100px;
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* White text for contrast */
+  padding: 60px 0;
+  font-family: "Arial", sans-serif;
+}
+
+/* Central container */
+.skillera-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Row for layout */
+.skillera-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Column structure */
+.skillera-col-md-4,
+.skillera-col-md-2 {
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+/* Logo styling */
+.skillera-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skillera-logo img {
+  width: 170px; /* Increase logo size for better visibility */
+  margin-right: 20px;
+  border-radius: 10px; /* Add border-radius for a smoother look */
+}
+
+.skillera-logo span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f7ab3a; /* Accent color matching the logo */
+}
+
+/* Description styling */
+.skillera-footer-description {
+  color: #b5b5b5;
+  font-size: 16px;
+  margin-top: 10px;
+  max-width: 300px;
+}
+
+/* Footer headings */
+.skillera-footer-heading {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffffff; /* White text for better readability */
+}
+
+/* Footer list styling */
+.skillera-footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skillera-footer-list li {
+  margin-bottom: 12px;
+}
+
+.skillera-footer-link {
+  color: #b5b5b5; /* Light grey text for contrast */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.skillera-footer-link:hover {
+  color: #f7ab3a; /* Accent color for hover state */
+  transition: color 0.3s ease;
+}
+
+/* Social links styling */
+.skillera-social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.skillera-social-links li {
+  margin-right: 20px;
+}
+
+.skillera-social-icon {
+  font-size: 28px; /* Larger icons for better visibility */
+  color: #b5b5b5;
+  transition: color 0.3s ease;
+}
+
+.skillera-social-icon:hover {
+  color: #f7ab3a; /* Accent color for hover state */
+}
+
+/* Copyright text styling */
+.skillera-copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  color: #b5b5b5;
+}
+
+/* Responsive design for tablets */
+@media (max-width: 768px) {
+  .skillera-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skillera-col-md-4,
+  .skillera-col-md-2 {
+    flex: 1 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .skillera-logo {
+    justify-content: center; /* Center the logo horizontally */
+  }
+
+  .skillera-logo img {
+    width: 160px;
+  }
+
+  .skillera-logo span {
+    font-size: 26px;
+  }
+
+  .skillera-social-icon {
+    font-size: 24px;
+  }
+}
+
+/* Responsive design for small devices */
+@media (max-width: 480px) {
+  .skillera-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skillera-col-md-2 {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .skillera-col-md-4 {
+    text-align: center;
+  }
+
+  .skillera-footer-description,
+  .skillera-footer-heading {
+    font-size: 18px;
+  }
+
+  .skillera-logo {
+    justify-content: center; /* Center the logo horizontally */
+  }
+
+  .skillera-logo img {
+    width: 150px;
+  }
+
+  .skillera-logo span {
+    font-size: 24px;
+  }
+
+  .skillera-social-icon {
+    font-size: 22px;
+  }
+
+  .skillera-copyright {
+    font-size: 14px;
+  }
+
+  /* Additional styles to keep Product and Company sections in a row */
+  .skillera-row .skillera-col-md-2:nth-child(2),
+  .skillera-row .skillera-col-md-2:nth-child(3) {
+    flex: 0 1 45%;
+    margin-bottom: 10px;
+  }
+}

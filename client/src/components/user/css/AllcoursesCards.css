@@ -1,0 +1,197 @@
+.AllcoursesCards-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.AllcoursesCards-card-horizontal {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  width: calc(50% - 10px); /* Two cards per row */
+  max-height: 220px;
+  min-height: 160px;
+}
+
+.AllcoursesCards-card-horizontal:hover {
+  transform: translateY(-5px);
+}
+
+.AllcoursesCards-card-image-container {
+  width: 190px; /* Reduced width */
+  height: 100%; /* Reduced height */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.AllcoursesCards-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.AllcoursesCards-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px; /* Reduced padding */
+  flex: 1;
+}
+
+.AllcoursesCards-card-title {
+  font-size: 16px; /* Reduced font size */
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.AllcoursesCards-card-description {
+  font-size: 12px; /* Reduced font size */
+  color: #555;
+  margin: 0 0 5px;
+}
+
+.AllcoursesCards-card-instructor {
+  font-size: 12px; /* Reduced font size */
+  color: #777;
+  margin: 0 0 5px;
+}
+
+.AllcoursesCards-card-rating {
+  display: flex;
+  align-items: center;
+  font-size: 12px; /* Reduced font size */
+  color: #777;
+  margin: 0 0 5px;
+}
+
+.AllcoursesCards-rating {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.AllcoursesCards-rating-stars {
+  margin-right: 5px;
+  color: #ffc107;
+}
+
+.AllcoursesCards-card-meta {
+  display: flex;
+  gap: 5px; /* Reduced gap */
+  font-size: 12px; /* Reduced font size */
+  color: #777;
+  margin: 0 0 5px;
+}
+
+.AllcoursesCards-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AllcoursesCards-card-price {
+  display: flex;
+  align-items: baseline;
+  font-size: 14px; /* Reduced font size */
+}
+
+.AllcoursesCards-current-price {
+  font-weight: bold;
+  color: #e91e63;
+  margin-right: 5px; /* Reduced margin */
+}
+
+.AllcoursesCards-original-price {
+  font-size: 12px; /* Reduced font size */
+  color: #777;
+  text-decoration: line-through;
+}
+
+.AllcoursesCards-add-to-cart {
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.AllcoursesCards-add-to-cart:hover {
+  background-color: #d81b60;
+}
+
+@media (max-width: 1104px) {
+  .AllcoursesCards-card-horizontal {
+    flex-direction: column;
+
+    width: calc(50% - 10px); /* Two cards per row */
+    max-height: 350px;
+    min-height: 200px;
+  }
+
+  .AllcoursesCards-card-image-container {
+    width: 100%;
+    height: 150px;
+  }
+
+  .AllcoursesCards-card-content {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .AllcoursesCards-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .AllcoursesCards-add-to-cart {
+    margin-top: 10px;
+    width: 100%; /* Full width button */
+    text-align: center;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .AllcoursesCards-card-horizontal {
+    flex-direction: column;
+    width: 100%;
+    max-height: none; /* Allow the card to expand vertically */
+    min-height: auto; /* Allow the card to shrink vertically */
+  }
+
+  .AllcoursesCards-card-image-container {
+    width: 100%;
+    height: 150px;
+  }
+
+  .AllcoursesCards-card-content {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .AllcoursesCards-card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .AllcoursesCards-add-to-cart {
+    margin-top: 10px;
+    width: 100%; /* Full width button */
+    text-align: center;
+  }
+}
+.AllcoursesCards-no-results {
+  font-weight: bold;
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
